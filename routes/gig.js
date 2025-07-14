@@ -1,13 +1,16 @@
 const express = require("express");
 const router = express.Router();
 const auth = require("../middleware/authMiddleware");
+const controller = require("../controllers/gigController");
+console.log("GIG CONTROLLER:", controller);
+
 const {
   createGig,
   getGigs,
   getGig,
   updateGig,
   deleteGig,
-} = require("../controllers/gigController");
+} = controller;
 
 // Public: Get all gigs
 router.get("/", getGigs);

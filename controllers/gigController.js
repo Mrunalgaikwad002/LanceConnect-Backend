@@ -1,3 +1,4 @@
+
 const Gig = require("../models/Gig");
 
 // Create a new gig
