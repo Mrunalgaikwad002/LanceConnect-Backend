@@ -42,8 +42,8 @@ router.post('/create-checkout-session', authMiddleware, async (req, res) => {
         },
       ],
       mode: 'payment',
-      success_url: `${process.env.FRONTEND_URL || 'http://localhost:3000'}/payment-success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${process.env.FRONTEND_URL || 'http://localhost:3000'}/payment-cancelled`,
+      success_url: `${process.env.FRONTEND_URL || 'https://lanceconnect.netlify.app'}/payment-success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${process.env.FRONTEND_URL || 'https://lanceconnect.netlify.app'}/payment-cancelled`,
       metadata: {
         gigId,
         freelancerId,

@@ -9,7 +9,7 @@ connectDB();
 const app = express();
 
 app.use(cors({
-  origin: ["http://localhost:3000", "http://localhost:3001"], // or your deployed frontend URL
+  origin: ["http://localhost:3000", "http://localhost:3001", "https://lanceconnect.netlify.app"],
   credentials: true
 }));
 
