@@ -9,9 +9,13 @@ connectDB();
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:3000", // or your deployed frontend URL
+  origin: ["http://localhost:3000", "http://localhost:3001"], // or your deployed frontend URL
   credentials: true
 }));
+
+// Raw body parsing for Stripe webhooks (must come before JSON parsing)
+app.use('/api/payments/webhook', express.raw({ type: 'application/json' }));
+
 app.use(express.json());
 
 // Root route
