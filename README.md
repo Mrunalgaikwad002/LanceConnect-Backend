@@ -90,8 +90,8 @@ backend/
    JWT_SECRET= your jwt secret key
    
    # Stripe Configuration
-   STRIPE_SECRET_KEY= from documentation
-   STRIPE_WEBHOOK_SECRET= from documentation
+   STRIPE_SECRET_KEY= your stripe secret key
+   STRIPE_WEBHOOK_SECRET= your stripe webhook secret 
    
    # Optional: For production
    # CORS_ORIGIN=https://your-frontend-domain.com
