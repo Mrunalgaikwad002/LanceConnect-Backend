@@ -79,7 +79,7 @@ backend/
    Create a `.env` file in the root directory:
    ```env
    # Server Configuration
-   PORT=5000
+   PORT= your port number
    NODE_ENV=development
    
    # Database Configuration
